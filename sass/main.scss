@@ -16,6 +16,10 @@ $fsxxs: 10px;
 
 // Document
 
+* {
+  text-decoration: none !important;
+}
+
 body {
   color: $primary;
   font-family: "Quicksand", sans-serif;
@@ -79,17 +83,17 @@ header {
 #download {
   background: url(../assets/img/bg-couple.png) no-repeat center center;
   background-size: cover;
-  .download-text {
+  .text {
     color: $accent;
     font-size: $fslg;
-    margin-bottom: 10em;
-  }
-  .download-text a {
-    background-color: $accent;
-    border-radius: 24px;
-    padding: 0.8em 6em;
-    font-size: $fssm;
-    color: $primary;
+    padding-bottom: 10em;
+    a {
+      background-color: $accent;
+      border-radius: 24px;
+      padding: 0.8em 6em;
+      font-size: $fssm;
+      color: $primary;
+    }
   }
 }
 
@@ -98,24 +102,16 @@ header {
 #footer {
   font-size: $fsxs;
   background-color: $footer;
-  line-height: 2em;
-  font-weight: 600;
-  a {
-    color: $primary;
-  }
+  color: $primary;
 }
 
 @media screen and (max-width: 768px) {
-  .download-text {
-    margin-bottom: 15em;
-    .download-text p {
+  #download {
+    p {
       font-size: $fsmd;
     }
-    .download-text a {
+    a {
       font-size: $fssm;
-    }
-    .footer {
-      font-size: $fsxs;
     }
   }
 }

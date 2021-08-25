@@ -1,0 +1,24 @@
+{
+  "name": "ignyteWebsiteBootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samburke97/ignyteWebsiteBootstrap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samburke97/ignyteWebsiteBootstrap/issues"
+  },
+  "homepage": "https://github.com/samburke97/ignyteWebsiteBootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "swiper": "^6.8.2"
+  }
+}

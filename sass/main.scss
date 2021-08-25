@@ -9,14 +9,12 @@ $fsmd: 24px;
 $fssm: 18px;
 $fsxs: 12px;
 $fsxxs: 10px;
-
-//Import the functions & the variables
-@import "../node_modules/bootstrap/scss/_functions";
-@import "../node_modules/bootstrap/scss/_variables";
 //Import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 //Import font
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+// Document
 
 body {
   color: $primary;
@@ -39,9 +37,6 @@ header {
     font-size: $fslg;
     margin: 5em auto;
   }
-  #mainNavbar {
-    text-align: center;
-  }
   .navbar-toggler {
     &:focus {
       box-shadow: none;
@@ -53,20 +48,17 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  #hero p {
-    font-size: $fsmd;
-  }
   header #hero {
-    margin: 2em auto;
+    margin: 3em auto;
+    p {
+      font-size: $fsmd;
+    }
   }
 }
 
 // Slider Section
 
 #swiper {
-  .swiper-container {
-    margin-bottom: 2em;
-  }
   .swiper-slide {
     color: $secondary;
     font-size: $fsmd;

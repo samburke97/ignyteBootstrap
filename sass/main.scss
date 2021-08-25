@@ -1,46 +1,29 @@
 //Custom variables
+
+/* Colors */
 $primary: #fff;
 $secondary: #000;
-$light: #fff;
+$accent: #6ab5b5;
+$footer: #876ab5;
+/* Font Size */
+$fslg: 36px;
+$fsmd: 24px;
+$fssm: 18px;
+$fsxs: 12px;
+$fsxxs: 10px;
 
 //Import the functions & the variables
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
-
-$custom-theme-colors: (
-  "altlight": #fff,
-  "altdark": #522192,
-);
-$theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 //Import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-* {
-  text-decoration: none;
-}
-
-:root {
-  /* Colors */
-  --clr-primary: #fff;
-  --clr-secondary: #000;
-  --clr-accent: #6ab5b5;
-  --clr-footer: #876ab5;
-  /* Fonts */
-  --ff-primary: "Quicksand", sans-serif;
-  /* Font Size */
-  --fs-lg: 36px;
-  --fs-md: 24px;
-  --fs-sm: 18px;
-  --fs-xs: 12px;
-  --fs-xxs: 10px;
-}
-
 body {
-  color: var(--clr-primary);
-  font-family: var(--ff-primary);
+  color: $primary;
+  font-family: "Quicksand", sans-serif;
   font-weight: 600;
   font-size: 15px;
 }
@@ -56,7 +39,7 @@ header {
     rgba(70, 48, 158, 1) 88%
   );
   #hero {
-    font-size: var(--fs-lg);
+    font-size: $fslg;
     margin: 5em auto;
   }
   #mainNavbar {
@@ -74,7 +57,7 @@ header {
 
 @media screen and (max-width: 768px) {
   #hero p {
-    font-size: var(--fs-md);
+    font-size: $fsmd;
   }
   header #hero {
     margin: 2em auto;
@@ -89,8 +72,8 @@ header {
   }
   .swiper-slide {
     flex-direction: column;
-    color: var(--clr-secondary);
-    font-size: var(--fs-md);
+    color: $secondary;
+    font-size: $fsmd;
   }
   img {
     max-width: 100%;
@@ -99,7 +82,7 @@ header {
 
 @media screen and (max-width: 768px) {
   #swiper p {
-    font-size: var(--fs-sm);
+    font-size: $fssm;
   }
 }
 
@@ -109,43 +92,43 @@ header {
   background: url(../assets/img/bg-couple.png) no-repeat center center;
   background-size: cover;
   .download-text {
-    color: var(--clr-accent);
+    color: $accent;
     margin-bottom: 20em;
   }
   .download-text p {
-    font-size: var(--fs-lg);
+    font-size: $fslg;
   }
   .download-text a {
-    background-color: var(--clr-accent);
+    background-color: $accent;
     border-radius: 24px;
     padding: 0.8em 6em;
-    font-size: var(--fs-sm);
-    color: var(--clr-primary);
+    font-size: $fssm;
+    color: $primary;
   }
 }
 
 // Footer
 
 #footer {
-  font-size: var(--fs-xs);
-  background-color: var(--clr-footer);
+  font-size: $fsxs;
+  background-color: $footer;
   line-height: 2em;
   font-weight: 600;
   a {
-    color: var(--clr-primary);
+    color: $primary;
   }
 }
 @media screen and (max-width: 768px) {
   .download-text {
     margin-bottom: 15em;
     .download-text p {
-      font-size: var(--fs-md);
+      font-size: $fsmd;
     }
     .download-text a {
-      font-size: var(--fs-xs);
+      font-size: $fssm;
     }
     .footer {
-      font-size: var(--fs-xs);
+      font-size: $fsxs;
     }
   }
 }

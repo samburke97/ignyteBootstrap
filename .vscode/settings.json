@@ -7,5 +7,8 @@
             "extensionName": ".min.css",
             "savePath": "/css"
         }
-    ]
+    ],
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "material-icon-theme"
 }

@@ -1,5 +1,3 @@
-//Custom variables
-
 /* Colors */
 $primary: #fff;
 $secondary: #000;
@@ -11,15 +9,12 @@ $fsmd: 24px;
 $fssm: 18px;
 $fsxs: 12px;
 $fsxxs: 10px;
-
-//Import the functions & the variables
-@import "../node_modules/bootstrap/scss/_functions";
-@import "../node_modules/bootstrap/scss/_variables";
-
 //Import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
-
+//Import font
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+// Document
 
 body {
   color: $primary;
@@ -42,9 +37,6 @@ header {
     font-size: $fslg;
     margin: 5em auto;
   }
-  #mainNavbar {
-    text-align: center;
-  }
   .navbar-toggler {
     &:focus {
       box-shadow: none;
@@ -56,27 +48,23 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  #hero p {
-    font-size: $fsmd;
-  }
   header #hero {
-    margin: 2em auto;
+    margin: 3em auto;
+    p {
+      font-size: $fsmd;
+    }
   }
 }
 
 // Slider Section
 
 #swiper {
-  .swiper-container {
-    margin-bottom: 2em;
-  }
   .swiper-slide {
-    flex-direction: column;
     color: $secondary;
     font-size: $fsmd;
   }
-  img {
-    max-width: 100%;
+  .swiper-pagination {
+    position: relative;
   }
 }
 
@@ -93,10 +81,8 @@ header {
   background-size: cover;
   .download-text {
     color: $accent;
-    margin-bottom: 20em;
-  }
-  .download-text p {
     font-size: $fslg;
+    margin-bottom: 10em;
   }
   .download-text a {
     background-color: $accent;
@@ -118,6 +104,7 @@ header {
     color: $primary;
   }
 }
+
 @media screen and (max-width: 768px) {
   .download-text {
     margin-bottom: 15em;

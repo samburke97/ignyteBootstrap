@@ -14,8 +14,6 @@ $fsxxs: 10px;
 //Import font
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-// Document
-
 * {
   text-decoration: none !important;
 }
@@ -39,7 +37,6 @@ header {
   );
   #hero {
     font-size: $fslg;
-    margin: 5em auto;
   }
   .navbar-toggler {
     &:focus {
@@ -49,11 +46,10 @@ header {
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
-}
-
-@media screen and (max-width: 768px) {
-  header #hero {
-    margin: 3em auto;
+  @include media-breakpoint-up(sm) {
+    #hero {
+      margin: 3em auto;
+    }
     p {
       font-size: $fsmd;
     }
@@ -70,11 +66,10 @@ header {
   .swiper-pagination {
     position: relative;
   }
-}
-
-@media screen and (max-width: 768px) {
-  #swiper p {
-    font-size: $fssm;
+  @include media-breakpoint-up(sm) {
+    p {
+      font-size: $fssm;
+    }
   }
 }
 
@@ -95,6 +90,11 @@ header {
       color: $primary;
     }
   }
+  @include media-breakpoint-up(sm) {
+    p {
+      font-size: $fsmd;
+    }
+  }
 }
 
 // Footer
@@ -103,15 +103,4 @@ header {
   font-size: $fsxs;
   background-color: $footer;
   color: $primary;
-}
-
-@media screen and (max-width: 768px) {
-  #download {
-    p {
-      font-size: $fsmd;
-    }
-    a {
-      font-size: $fssm;
-    }
-  }
 }

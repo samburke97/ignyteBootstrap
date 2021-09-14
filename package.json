@@ -19,6 +19,7 @@
   "homepage": "https://github.com/samburke97/ignyteWebsiteBootstrap#readme",
   "dependencies": {
     "bootstrap": "^5.1.0",
+    "sass": "^1.39.0",
     "swiper": "^6.8.2"
   }
 }
